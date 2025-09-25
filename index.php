@@ -9,7 +9,7 @@
 <body>
     <!-- container start -->
     <div class="container">
-        <?php include "./app/components/admin/sidebar/adminSidebar.php" ?>
+        <?php include "./app/components/user/sidebar/userSidebar.php" ?>
         <div class="main">
         </div>
     </div>

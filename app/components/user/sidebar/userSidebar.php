@@ -1,5 +1,5 @@
 <!-- sidebar start -->
-<div  >
+<div class="bg-sidebar" >
   <!-- mobile start -->
     <div class="sidebar-mobile">
       <div class="logo">
@@ -13,11 +13,11 @@
       <div class="container-menu">
         <div class="menu-mobile">
           <img src="./public/images/dashhboard.png" alt="logo" />
-          <a href="">Dashboard</a>
+          <a href="index.php">Menu Utama</a>
         </div>
         <div class="menu-mobile">
           <img src="./public/images/form.png" alt="logo" />
-          <a href="">Form Pengajuan</a>
+          <a href="userFormPengajuan.php">Form Pengajuan</a>
         </div>
         <div class="menu-mobile">
           <img src="./public/images/history-cuti.png" alt="logo" />
@@ -41,11 +41,11 @@
     <div class="container-menu">
       <div class="menu">
         <img src="./public/images/dashhboard.png" alt="logo" />
-        <a href="">Dashboard</a>
+        <a href="index.php">Menu Utama</a>
       </div>
       <div class="menu">
         <img src="./public/images/form.png" alt="logo" />
-        <a href="">Form Pengajuan</a>
+        <a href="userFormPengajuan.php">Form Pengajuan</a>
       </div>
       <div class="menu">
         <img src="./public/images/history-cuti.png" alt="logo" />
