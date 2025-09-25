@@ -375,6 +375,18 @@ body {
 
 /* monitoring */
 
+/* validasi */
+.validasi-container {
+  background-color: white;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.validasi-container p:first-child {
+  font-size: 1.3rem;
+}
+/* validasi */
+
 /* main */
 
 /* mobile res */

@@ -17,7 +17,7 @@
          </div>
          <div class="menu-mobile">
            <img src="./public/images/form.png" alt="logo" />
-           <a href="">Memvalidasi Pengajuan Cuti</a>
+           <a href="adminValidasiCuti.php">Memvalidasi Pengajuan Cuti</a>
          </div>
          <div class="menu-mobile">
            <img src="./public/images/history-cuti.png" alt="logo" />
@@ -41,7 +41,7 @@
        </div>
        <div class="menu">
          <img src="./public/images/form.png" alt="logo" />
-         <a href="">Memvalidasi Pengajuan Cuti</a>
+         <a href="adminValidasiCuti.php">Memvalidasi Pengajuan Cuti</a>
        </div>
        <div class="menu">
          <img src="./public/images/history-cuti.png" alt="logo" />
