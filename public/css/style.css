@@ -478,6 +478,10 @@ body {
     display: flex;
   }
 
+  .main {
+    width: 100%;
+  }
+
   /* card-welcome */
   .card-welcome {
     justify-content: space-between;

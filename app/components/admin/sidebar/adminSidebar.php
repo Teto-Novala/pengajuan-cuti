@@ -13,7 +13,7 @@
        <div class="container-menu">
          <div class="menu-mobile">
            <img src="./public/images/dashhboard.png" alt="logo" />
-           <a href="">Menu Utama</a>
+           <a href="adminMenuUtama.php">Menu Utama</a>
          </div>
          <div class="menu-mobile">
            <img src="./public/images/form.png" alt="logo" />
@@ -37,7 +37,7 @@
      <div class="container-menu">
        <div class="menu">
          <img src="./public/images/dashhboard.png" alt="logo" />
-         <a href="">Menu Utama</a>
+         <a href="adminMenuUtama.php">Menu Utama</a>
        </div>
        <div class="menu">
          <img src="./public/images/form.png" alt="logo" />
