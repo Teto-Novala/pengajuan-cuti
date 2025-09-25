@@ -272,6 +272,7 @@ body {
 .card-status {
   display: flex;
   column-gap: 1rem;
+  margin-bottom: 1rem;
 }
 .list-status {
   display: flex;
@@ -294,6 +295,85 @@ body {
   margin-bottom: 0.2rem;
 }
 /* card-status */
+
+/* monitoring */
+.monitoring {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.4rem;
+  overflow-x: scroll;
+}
+
+.monitoring-title {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.monitoring-title p:first-child {
+  font-size: 1.3rem;
+}
+
+.monitoring-title p:last-child {
+  color: red;
+}
+
+.monitoring-search form {
+  display: flex;
+  width: 100%;
+  column-gap: 0.5rem;
+  justify-content: space-between;
+}
+.input-monitoring {
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.btn-monitoring {
+  font-size: 1.1rem;
+  background-color: blue;
+  color: white;
+  padding: 3px 7px;
+  outline: none;
+  border: none;
+}
+
+.monitoring-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.monitoring-table th,
+.monitoring-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+.monitoring-table th {
+  background-color: #0b132a;
+  color: white;
+  font-weight: bold;
+}
+
+.monitoring-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.monitoring-table tbody tr:hover {
+  background-color: #e8f0fe;
+}
+
+.monitoring-table td img {
+  width: 1.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/* monitoring */
 
 /* main */
 
@@ -324,6 +404,16 @@ body {
   .list-status p {
     text-align: start;
   }
+
+  /* monitoring */
+  .monitoring-search form {
+    justify-content: end;
+  }
+
+  .input-monitoring {
+    width: auto;
+  }
+  /* monitoring */
 
   /* main */
 }
