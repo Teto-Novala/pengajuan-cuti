@@ -126,121 +126,173 @@ table {
 
 /* css reset */
 
-/* mobile res */
-
-@media screen and (max-width: 768px) {
-  .sidebar-desktop {
-    display: none;
-  }
-
-  .sidebar-mobile {
-    background-color: #0b132a;
-    color: white;
-  }
-
-  .sidebar-mobile a {
-    color: white;
-    font-size: larger;
-    text-decoration: none;
-  }
-
-  .sidebar-mobile .logo {
-    font-size: 2rem;
-    padding: 1.3rem;
-  }
-
-  .menu-mobile {
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
-    width: 100%;
-  }
-
-  .menu-mobile:hover {
-    text-decoration: underline;
-  }
-
-  .menu-mobile img {
-    filter: invert(1);
-    width: 10%;
-  }
-
-  .sidebar-mobile .logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0.4rem;
-  }
-
-  .hamburger-menu span {
-    display: block;
-    width: 1.6rem;
-    height: 0.1rem;
-    background-color: white;
-  }
-
-  .sidebar-mobile .container-menu {
-    position: fixed;
-    top: 10.5%;
-    right: -100%;
-    width: 50%;
-    height: 100vh;
-    background-color: #0b132a;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 1rem;
-    row-gap: 4rem;
-    transition: right 0.3s ease-in-out;
-    z-index: 999;
-  }
-
-  .sidebar-mobile .container-menu.active {
-    right: 0;
-  }
-
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: 998;
-  }
-
-  .overlay.active {
-    display: block;
-  }
+.bold {
+  font-weight: bold;
 }
+
+/* mobile res */
+/* sidebar */
+.sidebar-desktop {
+  display: none;
+}
+
+.sidebar-mobile {
+  background-color: #0b132a;
+  color: white;
+}
+
+.sidebar-mobile a {
+  color: white;
+  font-size: larger;
+  text-decoration: none;
+}
+
+.sidebar-mobile .logo {
+  font-size: 2rem;
+  padding: 1.3rem;
+}
+
+.menu-mobile {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  width: 100%;
+}
+
+.menu-mobile:hover {
+  text-decoration: underline;
+}
+
+.menu-mobile img {
+  filter: invert(1);
+  width: 10%;
+}
+
+.sidebar-mobile .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4rem;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 1.6rem;
+  height: 0.1rem;
+  background-color: white;
+}
+
+.sidebar-mobile .container-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 50%;
+  height: 100vh;
+  background-color: #0b132a;
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 1rem;
+  row-gap: 4rem;
+  transition: right 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.sidebar-mobile .container-menu.active {
+  right: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 998;
+}
+
+.overlay.active {
+  display: block;
+}
+/* sidebar */
+
+/* main */
+.main {
+  padding: 1rem;
+  background-color: rgb(236, 236, 236);
+}
+
+.card-welcome {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.welcome-title {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.welcome-date {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  padding: 0.4rem 0;
+}
+
+.welcome-date img,
+.welcome-date p {
+  filter: invert(1);
+}
+
+.welcome-date img {
+  width: 10%;
+}
+/* main */
 
 /* mobile res */
 
 /* tablet res */
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+  /* sidebar */
   .sidebar-mobile .container-menu {
-    top: 7.5%;
+    top: 0;
+    width: 30%;
   }
+  /* sidebar */
+
+  /* main */
+  .card-welcome {
+    flex-direction: row;
+  }
+  /* main */
 }
 
 /* tablet res */
 
 /* desktop res */
 
-@media screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
+  /* sidebar */
   .sidebar-mobile {
     display: none;
   }
   .sidebar-desktop {
     background-color: #0b132a;
-    width: 17%;
-    height: 100dvh;
+    height: 100svh;
     color: white;
     padding-top: 1rem;
     padding-left: 1rem;
@@ -260,7 +312,6 @@ table {
   }
 
   .container-menu {
-    width: 100%;
     height: max-content;
     display: flex;
     flex-direction: column;
@@ -282,6 +333,23 @@ table {
   .menu:hover {
     text-decoration: underline;
   }
+  /* sidebar */
+
+  /* main */
+  .container {
+    width: 100%;
+    display: flex;
+  }
+
+  .main {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .card-welcome {
+    justify-content: space-between;
+  }
+  /* main */
 }
 
 /* desktop res */
