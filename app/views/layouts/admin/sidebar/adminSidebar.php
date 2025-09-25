@@ -14,22 +14,18 @@
     <div class="container-menu">
       <div class="menu-mobile">
         <img src="./public/images/dashhboard.png" alt="logo" />
-        <a href="">Dashboard</a>
+        <a href="">Menu Utama</a>
       </div>
       <div class="menu-mobile">
         <img src="./public/images/form.png" alt="logo" />
-        <a href="">Form Pengujian</a>
+        <a href="">Memvalidasi Pengajuan Cuti</a>
       </div>
       <div class="menu-mobile">
         <img src="./public/images/history-cuti.png" alt="logo" />
-        <a href="">Histori Cuti</a>
+        <a href="">Laporan Cuti</a>
       </div>
       <div class="menu-mobile">
         <img src="./public/images/history-lembur.png" alt="logo" />
-        <a href="">Histori Lembur</a>
-      </div>
-      <div class="menu-mobile">
-        <img src="./public/images/profile.png" alt="logo" />
         <a href="">Profile</a>
       </div>
     </div>
@@ -43,22 +39,18 @@
   <div class="container-menu">
     <div class="menu">
       <img src="./public/images/dashhboard.png" alt="logo" />
-      <a href="">Dashboard</a>
+      <a href="">Menu Utama</a>
     </div>
     <div class="menu">
       <img src="./public/images/form.png" alt="logo" />
-      <p>Form Pengujian</p>
+      <a href="">Memvalidasi Pengajuan Cuti</a>
     </div>
     <div class="menu">
       <img src="./public/images/history-cuti.png" alt="logo" />
-      <a href="">Histori Cuti</a>
+      <a href="">Laporan Cuti</a>
     </div>
     <div class="menu">
       <img src="./public/images/history-lembur.png" alt="logo" />
-      <a href="">Histori Lembur</a>
-    </div>
-    <div class="menu">
-      <img src="./public/images/profile.png" alt="logo" />
       <a href="">Profile</a>
     </div>
   </div>

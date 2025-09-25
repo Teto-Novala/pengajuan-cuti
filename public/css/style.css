@@ -156,6 +156,10 @@ table {
     width: 100%;
   }
 
+  .menu-mobile:hover {
+    text-decoration: underline;
+  }
+
   .menu-mobile img {
     filter: invert(1);
     width: 10%;
@@ -273,6 +277,10 @@ table {
   .menu img {
     filter: invert(1);
     width: 10%;
+  }
+
+  .menu:hover {
+    text-decoration: underline;
   }
 }
 
