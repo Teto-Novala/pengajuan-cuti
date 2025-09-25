@@ -9,16 +9,30 @@
 <body>
     <!-- container start -->
     <div class="container">
-        <?php include "./app/views/layouts/user/sidebar/userSidebar.php" ?>
+        <?php include "./app/views/layouts/admin/sidebar/adminSidebar.php" ?>
         <div class="main">
-            <div class="card-welcome">
-                <div class="welcome-title">
-                    <p>Selamat Datang, <span class="bold">Admin Sistem</span>. Anda login sebagai <span class="bold">Administrator</span></p>
-                    <p>Aplikasi E-Cuti Indonesia</p>
+            <?php include "./app/views/layouts/admin/welcome-card/welcomeCard.php" ?>
+            <div class="card-status">
+                <div class="list-status">
+                    <img src="/public/images/pending-list.svg" alt="pending">
+                    <div class="bold">
+                        <p>0 Cuti</p>
+                        <p>Menunggu</p>
+                    </div>
                 </div>
-                <div class="welcome-date">
-                    <img src="/public/images/date.png" alt="date">
-                    <p>Kamis, 25 September 2025</p>
+                <div class="list-status">
+                    <img src="/public/images/reject-list.svg" alt="pending">
+                    <div class="bold">
+                        <p>0 Cuti</p>
+                        <p>Tidak Diterima</p>
+                    </div>
+                </div>
+                <div class="list-status">
+                    <img src="/public/images/approve-list.svg" alt="pending">
+                    <div class="bold">
+                        <p>0 Cuti</p>
+                        <p>Diterima</p>
+                    </div>
                 </div>
             </div>
         </div>
