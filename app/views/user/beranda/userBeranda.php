@@ -38,7 +38,6 @@
                 </form>
             </div>
         </header>
-        </div>
     <main>
         kontenasdfffffffffffffffffffffffffffffffffffffffffffff
     </main>
