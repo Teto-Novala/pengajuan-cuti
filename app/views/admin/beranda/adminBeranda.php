@@ -6,6 +6,15 @@
     <title>Cuti</title>
 </head>
 <body>
-    admin
+    <header>
+        <nav>
+            <div>CUTI</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>

@@ -1,0 +1,102 @@
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: #0b132a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+nav div {
+  font-size: 2rem;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4rem;
+  cursor: pointer;
+}
+
+.hamburger:hover > span {
+  background-color: rgba(255, 255, 255, 0.468);
+}
+
+.hamburger span {
+  display: block;
+  width: 2rem;
+  height: 3px;
+  background-color: white;
+  transition: all 200ms ease-in;
+}
+
+.mobile {
+  position: fixed;
+  top: 4rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  transform: translateX(25rem);
+  z-index: 999;
+  transition: all 200ms ease-in;
+}
+
+.mobile.active {
+  transform: translateX(0rem);
+}
+
+.nav {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1rem;
+  padding-top: 2rem;
+  row-gap: 3rem;
+  background-color: #0b132a;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  column-gap: 0.4rem;
+}
+
+.nav-list img {
+  width: 20%;
+  filter: invert(1);
+}
+
+.nav-list button {
+  background-color: inherit;
+  outline: none;
+  border: none;
+  color: white;
+  transition: all 200ms ease-in;
+}
+
+.overlay {
+  width: 60%;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  transition: all 200ms ease-in;
+}
+
+.nav a:hover,
+.nav-list button:hover {
+  color: rgb(158, 157, 157);
+}
+main {
+  margin-top: 4rem;
+}
