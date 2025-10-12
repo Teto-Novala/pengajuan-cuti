@@ -13,7 +13,7 @@
             <div class="nav">
                 <div class="nav-list">
                     <img src="../../../../public/images/beranda.svg" alt="logo">
-                    <a href="">Beranda</a>
+                    <a href="../beranda/userBeranda.php">Beranda</a>
                 </div>
                 <div class="nav-list">
                     <img src="../../../../public/images/form.svg" alt="logo">

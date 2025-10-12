@@ -16,8 +16,8 @@ include "../../../controllers/user/profil/userProfilController.php"
     <?php require "../../../components/user/sidebar/userSidebar.php" ?>
     <main>
         <div class="container">
-            <h1>Profil</h1>
             <div class="container-fields">
+                <h1>Profil</h1>
                 <div class="profil-field">
                     <label for="Username">Username</label>
                     <input type="text" value="<?= htmlspecialchars($data['username'])?>" disabled>

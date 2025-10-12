@@ -4,7 +4,6 @@
 
 h1 {
   font-size: xx-large;
-  margin-bottom: 1rem;
 }
 
 label {
@@ -17,6 +16,7 @@ input {
   outline: none;
   border: 1px solid #0b132a;
   border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 }
 
 .container-fields {

@@ -1,3 +1,7 @@
+<?php
+include "../../../controllers/user/beranda/userBerandaController.php"
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +10,14 @@
     <title>Cuti</title>
     <link rel="stylesheet" href="../../../../public/css/reset.css">
     <link rel="stylesheet" href="../../../../public/css/user/topbar/userTopbar.css">
+    <link rel="stylesheet" href="../../../../public/css/user/beranda/userBeranda.css">
 </head>
 <body>
     <?php require "../../../components/user/sidebar/userSidebar.php" ?>
     <main>
-        kontenasdfffffffffffffffffffffffffffffffffffffffffffff
+        <div class="container">
+            <?php require "../../../components/welcome/welcome.php" ?>
+        </div>
     </main>
 
     <script src="../../../../public/js/mobile-nav/mobileNav.js"></script>
