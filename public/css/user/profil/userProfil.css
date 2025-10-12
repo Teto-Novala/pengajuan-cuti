@@ -1,0 +1,32 @@
+.container {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: xx-large;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: larger;
+}
+
+input {
+  padding: 10px 7px;
+  background-color: inherit;
+  outline: none;
+  border: 1px solid #0b132a;
+  border-radius: 0.5rem;
+}
+
+.container-fields {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.profil-field {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}

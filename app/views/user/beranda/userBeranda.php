@@ -8,44 +8,7 @@
     <link rel="stylesheet" href="../../../../public/css/user/topbar/userTopbar.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div>CUTI</div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <img class="profil" src="../../../../public/images/profil.svg" alt="profil">
-        </nav>
-        <div class="mobile">
-            <div class="overlay"></div>
-            <div class="nav">
-                <div class="nav-list">
-                    <img src="../../../../public/images/beranda.svg" alt="logo">
-                    <a href="">Beranda</a>
-                </div>
-                <div class="nav-list">
-                    <img src="../../../../public/images/form.svg" alt="logo">
-                    <a href="">Form Pengajuan</a>
-                </div>
-                <div class="nav-list">
-                    <img src="../../../../public/images/histori.svg" alt="logo">
-                    <a href="">Histori Cuti</a>
-                </div>
-                <form method="post" class="nav-list logout">
-                    <img src="../../../../public/images/logout.svg" alt="logo">
-                    <button>Logout</button>
-                </form>
-            </div>
-        </div>
-        <div class="profil-list">
-            <a href="">Profil</a>
-            <form method="post">
-                <button>Logout</button>
-            </form>
-        </div>
-    </header>
+    <?php require "../../../components/user/sidebar/userSidebar.php" ?>
     <main>
         kontenasdfffffffffffffffffffffffffffffffffffffffffffff
     </main>
