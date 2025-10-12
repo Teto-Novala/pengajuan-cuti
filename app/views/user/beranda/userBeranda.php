@@ -16,6 +16,7 @@
                 <span></span>
                 <span></span>
             </div>
+            <img class="profil" src="../../../../public/images/profil.svg" alt="profil">
         </nav>
         <div class="mobile">
             <div class="overlay"></div>
@@ -32,12 +33,19 @@
                     <img src="../../../../public/images/histori.svg" alt="logo">
                     <a href="">Histori Cuti</a>
                 </div>
-                <form method="post" class="nav-list">
+                <form method="post" class="nav-list logout">
                     <img src="../../../../public/images/logout.svg" alt="logo">
                     <button>Logout</button>
                 </form>
             </div>
-        </header>
+        </div>
+        <div class="profil-list">
+            <a href="">Profil</a>
+            <form method="post">
+                <button>Logout</button>
+            </form>
+        </div>
+    </header>
     <main>
         kontenasdfffffffffffffffffffffffffffffffffffffffffffff
     </main>

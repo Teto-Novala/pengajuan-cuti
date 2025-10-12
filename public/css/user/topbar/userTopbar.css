@@ -109,6 +109,14 @@ main {
   margin-top: 4rem;
 }
 
+.profil {
+  display: none;
+}
+
+.profil-list {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .nav {
     width: 30%;
@@ -126,6 +134,44 @@ main {
     display: none;
   }
 
+  .profil {
+    display: inline-block;
+    filter: invert(1);
+    width: 1.5%;
+  }
+
+  .profil-list {
+    flex-direction: column;
+    row-gap: 1rem;
+    position: fixed;
+    top: 4rem;
+    right: 3rem;
+    background-color: #182242;
+    padding: 1rem 3rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    z-index: 9999;
+  }
+
+  .profil-list.active {
+    display: flex;
+  }
+
+  .profil-list a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .profil-list button {
+    outline: none;
+    border: none;
+    background-color: inherit;
+    color: white;
+    padding: 0;
+    font-family: inherit;
+    cursor: pointer;
+  }
+
   .mobile {
     transform: inherit;
   }
@@ -133,18 +179,24 @@ main {
   .overlay {
     display: none;
   }
+  nav {
+    padding: 1rem 4rem;
+  }
   .nav {
-    width: 20%;
+    width: 15%;
     padding: 4rem 0;
   }
   .nav-list {
-    padding-left: 4rem;
+    padding-left: 2rem;
   }
   .nav-list a,
   .nav-list button {
     font-size: 1.1rem;
   }
+  .logout {
+    display: none;
+  }
   main {
-    padding-left: 19rem;
+    padding-left: 14.3rem;
   }
 }
