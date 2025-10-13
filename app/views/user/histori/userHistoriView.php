@@ -37,7 +37,7 @@ include "../../../controllers/user/histori/userHistoriController.php"
                                     $no = 1;
                                     while ($row = $result->fetch_assoc()) {
                                         $statusClass = strtolower($row['status']); // buat class css sesuai status
-                                        echo "<tr>
+                                        echo "<tr class='tr-head'>
                                                 <td>{$no}</td>
                                                 <td>{$row['tanggal_mulai']}</td>
                                                 <td>{$row['tanggal_selesai']}</td>

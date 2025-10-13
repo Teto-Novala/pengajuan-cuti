@@ -42,8 +42,9 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
-tr:hover {
+.tr-head:hover {
   background-color: #f8f9fa;
+  color: black;
 }
 
 .status {

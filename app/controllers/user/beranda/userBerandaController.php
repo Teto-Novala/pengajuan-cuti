@@ -32,4 +32,7 @@ if($result_status && $result_status->num_rows > 0){
     }
 }
 
+$sql_histori = "SELECT * FROM cuti WHERE user_id = '$user_id' ORDER BY created_at DESC LIMIT 4";
+$result_histori = $db->query($sql_histori);
+
 ?>
