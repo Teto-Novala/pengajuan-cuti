@@ -1,7 +1,3 @@
-<?php
-include "../../../controllers/user/profil/userProfilController.php"
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +6,7 @@ include "../../../controllers/user/profil/userProfilController.php"
     <title>Cuti</title>
     <link rel="stylesheet" href="../../../../public/css/reset.css">
     <link rel="stylesheet" href="../../../../public/css/user/topbar/userTopbar.css">
-    <link rel="stylesheet" href="../../../../public/css/user/profil/userProfil.css">
+    <link rel="stylesheet" href="../../../../public/css/user/pengajuan/userPengajuan.css">
 </head>
 <body>
     <?php require "../../../components/user/sidebar/userSidebar.php" ?>
@@ -30,21 +26,13 @@ include "../../../controllers/user/profil/userProfilController.php"
                     <a href="">Histori Cuti</a>
                 </div>
             </div>
-            <div class="container-fields">
-                <h1>Profil</h1>
-                <div class="profil-field">
-                    <label for="Username">Username</label>
-                    <input type="text" value="<?= htmlspecialchars($data['username'])?>" disabled>
+            <form method="post" class="form-pengajuan">
+                <h1>Form Pengajuan</h1>
+                <div class="form-list">
+                    <label for="tanggal_mulai">Tanggal Mulai</label>
+                    <input type="date">
                 </div>
-                <div class="profil-field">
-                    <label for="Username">Nama Lengkap</label>
-                    <input type="text" value="<?= htmlspecialchars($data['nama_lengkap'])?>" disabled>
-                </div>
-                <div class="profil-field">
-                    <label for="Username">No HP</label>
-                    <input type="text" value="<?= htmlspecialchars($data['no_hp'])?>" disabled>
-                </div>
-            </div>
+            </form>
         </div>
     </main>
     <script src="../../../../public/js/mobile-nav/mobileNav.js"></script>

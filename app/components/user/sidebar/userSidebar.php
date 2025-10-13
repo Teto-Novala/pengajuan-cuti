@@ -17,7 +17,7 @@
                 </div>
                 <div class="nav-list">
                     <img src="../../../../public/images/form.svg" alt="logo">
-                    <a href="">Form Pengajuan</a>
+                    <a href="../pengajuan/userPengajuan.php">Form Pengajuan</a>
                 </div>
                 <div class="nav-list">
                     <img src="../../../../public/images/histori.svg" alt="logo">

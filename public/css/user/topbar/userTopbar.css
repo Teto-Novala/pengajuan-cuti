@@ -13,7 +13,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  /* z-index: 999; */
 }
 
 nav div {
@@ -43,11 +43,9 @@ nav div {
   position: fixed;
   top: 4rem;
   bottom: 0;
-  left: 0;
   right: 0;
   display: flex;
   transform: translateX(25rem);
-  z-index: 999;
   transition: all 200ms ease-in;
 }
 
@@ -89,6 +87,8 @@ nav div {
   outline: none;
   border: none;
   color: white;
+  font-size: 1rem;
+  padding: 0;
   transition: all 200ms ease-in;
   font-family: "Times New Roman", Times, serif;
 }
@@ -117,7 +117,11 @@ main {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+.container-sidebar {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
   .nav {
     width: 30%;
   }
@@ -129,7 +133,46 @@ main {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
+  .container {
+    display: flex;
+    height: 100svh;
+  }
+  .container-sidebar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    row-gap: 3rem;
+    padding-left: 3rem;
+    flex-basis: 15%;
+    background-color: #182242;
+  }
+
+  .sidebar-list {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+  .sidebar-list img {
+    width: 10%;
+    filter: invert(1);
+  }
+  .sidebar-list a {
+    text-decoration: none;
+    color: white;
+  }
+  .sidebar-list button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding: 0;
+    color: white;
+    font-size: 1rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .mobile {
+    display: none;
+  }
   .hamburger {
     display: none;
   }
@@ -154,7 +197,7 @@ main {
     padding: 1rem 3rem;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    z-index: 9999;
+    z-index: 999;
   }
 
   .profil-list.active {
@@ -177,30 +220,21 @@ main {
   }
 
   .mobile {
-    transform: inherit;
-  }
-
-  .overlay {
-    display: none;
+    transform: initial;
+    top: 4rem;
+    bottom: 0;
+    right: 40rem;
+    left: 0;
   }
   nav {
     padding: 1rem 4rem;
+    z-index: inherit;
   }
   .nav {
     width: 15%;
     padding: 4rem 0;
   }
-  .nav-list {
-    padding-left: 2rem;
-  }
-  .nav-list a,
-  .nav-list button {
-    font-size: 1.1rem;
-  }
   .logout {
     display: none;
-  }
-  main {
-    padding-left: 14.3rem;
   }
 }

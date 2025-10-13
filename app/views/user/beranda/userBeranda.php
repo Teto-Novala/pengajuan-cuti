@@ -17,6 +17,7 @@ include "../../../controllers/user/beranda/userBerandaController.php"
     <main>
         <div class="container">
             <?php require "../../../components/welcome/welcome.php" ?>
+            <?php require "../../../components/user/beranda/status/userBerandaStatus.php" ?>
         </div>
     </main>
 
