@@ -1,21 +1,72 @@
+body {
+  background-color: #dde4eb;
+}
+
 h1 {
   font-size: x-large;
 }
 
-/* .form-pengajuan {
+.container-main {
+  padding: 1rem;
+}
+
+.form-pengajuan {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 }
 
 .form-list {
   display: flex;
   flex-direction: column;
-  row-gap: 0.5rem;
+  row-gap: 0.4rem;
 }
 
-.form-list input {
-  padding: 0.5rem 1rem;
+.form-list input,
+.form-list textarea {
+  padding: 8px 7px;
+  border-radius: 0.5rem;
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 0.5rem;
+}
+
+.form-btn button {
   outline: none;
   border-radius: 0.5rem;
-} */
+  width: 100%;
+  padding: 0.5rem 0;
+  transition: all 200ms ease-in;
+  color: white;
+}
+
+.form-btn button:first-child {
+  background-color: red;
+  border: 1px solid red;
+}
+.form-btn button:first-child:hover {
+  background-color: inherit;
+  color: red;
+}
+.form-btn button:last-child {
+  background-color: green;
+  border: 1px solid green;
+}
+.form-btn button:last-child:hover {
+  background-color: inherit;
+  color: green;
+}
+
+@media only screen and (min-width: 1280px) {
+  .container-main {
+    width: 100%;
+  }
+}

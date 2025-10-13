@@ -13,11 +13,11 @@
             <div class="nav">
                 <div class="nav-list">
                     <img src="../../../../public/images/beranda.svg" alt="logo">
-                    <a href="../beranda/userBeranda.php">Beranda</a>
+                    <a href="../beranda/userBerandaView.php">Beranda</a>
                 </div>
                 <div class="nav-list">
                     <img src="../../../../public/images/form.svg" alt="logo">
-                    <a href="../pengajuan/userPengajuan.php">Form Pengajuan</a>
+                    <a href="../pengajuan/userPengajuanView.php">Form Pengajuan</a>
                 </div>
                 <div class="nav-list">
                     <img src="../../../../public/images/histori.svg" alt="logo">
@@ -25,7 +25,7 @@
                 </div>
                 <div class="nav-list profil-mobile">
                     <img src="../../../../public/images/profil.svg" alt="logo">
-                    <a href="../profil/userProfil.php">Profil</a>
+                    <a href="../profil/userProfilView.php">Profil</a>
                 </div>
                 <form action="../../../controllers/logout/logoutController.php" method="post" class="nav-list logout">
                     <img src="../../../../public/images/logout.svg" alt="logo">
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="profil-list">
-            <a href="../profil/userProfil.php">Profil</a>
+            <a href="../profil/userProfilView.php">Profil</a>
             <form action="../../../controllers/logout/logoutController.php" method="post">
                 <button type="submit" name="logout">Logout</button>
             </form>

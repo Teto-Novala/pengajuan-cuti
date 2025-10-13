@@ -17,9 +17,9 @@ if (isset($_POST['login'])){
         $data = $result->fetch_assoc();
         $_SESSION['user_id'] = $data['id'];
         if($data['role']=='user'){
-            header("Location:../../views/user/beranda/userBeranda.php");
+            header("Location:../../views/user/beranda/userBerandaView.php");
         }else {
-            header("Location:../../views/admin/beranda/adminBeranda.php");
+            header("Location:../../views/admin/beranda/adminBerandaView.php");
         }
         exit;
     }else{
