@@ -1,0 +1,75 @@
+body {
+  background-color: #dde4eb;
+}
+
+h1 {
+  font-size: x-large;
+}
+
+.container-main {
+  padding: 1rem;
+}
+
+.histori {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  min-height: 100svh;
+}
+
+.container-table {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #0b132a;
+  color: #fff;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f8f9fa;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.status.diterima {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.status.ditolak {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.status.menunggu {
+  background-color: #f1c40f;
+  color: white;
+}
+
+@media only screen and (min-width: 1280px) {
+  .container-main {
+    width: 100%;
+  }
+}

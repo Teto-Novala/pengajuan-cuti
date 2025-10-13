@@ -135,7 +135,7 @@ main {
 @media only screen and (min-width: 1280px) {
   .container {
     display: flex;
-    height: 100svh;
+    min-height: 100svh;
   }
   .container-sidebar {
     display: flex;

@@ -41,5 +41,6 @@ include "../../../controllers/user/pengajuan/userPengajuanController.php"
         </div>
     </main>
     <script src="../../../../public/js/mobile-nav/mobileNav.js"></script>
+    <script src="../../../../public/js/user/pengajuan/userPengajuan.js"></script>
 </body>
 </html>

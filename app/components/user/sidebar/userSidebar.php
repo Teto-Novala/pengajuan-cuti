@@ -21,7 +21,7 @@
                 </div>
                 <div class="nav-list">
                     <img src="../../../../public/images/histori.svg" alt="logo">
-                    <a href="">Histori Cuti</a>
+                    <a href="../histori/userHistoriView.php">Histori Cuti</a>
                 </div>
                 <div class="nav-list profil-mobile">
                     <img src="../../../../public/images/profil.svg" alt="logo">
