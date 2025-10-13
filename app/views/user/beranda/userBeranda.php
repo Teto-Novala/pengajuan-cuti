@@ -16,8 +16,11 @@ include "../../../controllers/user/beranda/userBerandaController.php"
     <?php require "../../../components/user/sidebar/userSidebar.php" ?>
     <main>
         <div class="container">
-            <?php require "../../../components/welcome/welcome.php" ?>
-            <?php require "../../../components/user/beranda/status/userBerandaStatus.php" ?>
+            <?php require "../../../components/user/sidebar-desktop/userSidebarDesktop.php" ?>
+            <div class="container-main">
+                <?php require "../../../components/welcome/welcome.php" ?>
+                <?php require "../../../components/user/beranda/status/userBerandaStatus.php" ?>
+            </div>
         </div>
     </main>
 

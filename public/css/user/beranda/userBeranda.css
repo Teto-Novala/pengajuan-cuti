@@ -1,7 +1,8 @@
 body {
   background-color: #dde4eb;
 }
-.container {
+
+.container-main {
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -106,5 +107,9 @@ body {
   }
   .status-list img {
     width: 20%;
+  }
+
+  .container-main {
+    width: 100%;
   }
 }
