@@ -1,7 +1,7 @@
 <div class="container-sidebar">
     <div class="sidebar-list">
         <img src="../../../../public/images/beranda.svg" alt="logo">
-        <a href="../beranda/adminrBerandaView.php">Beranda</a>
+        <a href="../beranda/adminBerandaView.php">Beranda</a>
     </div>
     <div class="sidebar-list">
         <img src="../../../../public/images/form.svg" alt="logo">
