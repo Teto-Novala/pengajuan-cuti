@@ -1,0 +1,55 @@
+body {
+  background-color: #dde4eb;
+}
+
+.container-main {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+h1 {
+  font-size: x-large;
+}
+
+label {
+  font-size: larger;
+}
+
+input {
+  padding: 10px 7px;
+  background-color: inherit;
+  outline: none;
+  border: 1px solid #0b132a;
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.container-fields {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  min-height: 100svh;
+}
+
+.profil-field {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+@media only screen and (min-width: 1280px) {
+  .container-fields {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container-main {
+    width: 100%;
+  }
+}
