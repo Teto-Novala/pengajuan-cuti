@@ -23,13 +23,24 @@ include "../../../controllers/admin/laporan-cuti/adminLaporanCutiController.php"
 
           <!-- 🔍 FILTER -->
           <div class="filter-container">
-            <label for="statusFilter">Filter Status:</label>
+            <label for="statusFilter">Status:</label>
             <select id="statusFilter">
               <option value="semua">Semua</option>
               <option value="menunggu">Menunggu</option>
               <option value="ditolak">Ditolak</option>
               <option value="diterima">Diterima</option>
             </select>
+
+            <label for="tanggalMulai">Mulai:</label>
+            <input type="date" id="tanggalMulai">
+
+            <label for="tanggalSelesai">Selesai:</label>
+            <input type="date" id="tanggalSelesai">
+
+            <label for="namaFilter">Nama:</label>
+            <input type="text" id="namaFilter" placeholder="Cari nama...">
+
+            <button id="resetFilter">Reset</button>
           </div>
 
           <!-- 📋 TABEL -->
@@ -42,20 +53,43 @@ include "../../../controllers/admin/laporan-cuti/adminLaporanCutiController.php"
   </main>
   <script src="../../../../public/js/mobile-nav/mobileNav.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-  const select = document.getElementById("statusFilter");
-  const tableContainer = document.getElementById("tableContainer");
+    const statusSelect = document.getElementById("statusFilter");
+    const tanggalMulai = document.getElementById("tanggalMulai");
+    const tanggalSelesai = document.getElementById("tanggalSelesai");
+    const namaInput = document.getElementById("namaFilter");
+    const resetButton = document.getElementById("resetFilter");
+    const tableContainer = document.getElementById("tableContainer");
 
-  select.addEventListener("change", () => {
-    const status = select.value;
-    fetch("../../../components/admin/laporan-cuti/table/adminLaporanCutiTable.php?status=" + status)
-      .then((res) => res.text())
-      .then((html) => {
-        tableContainer.innerHTML = html;
-      })
-      .catch((err) => console.error("Fetch error:", err));
-  });
-});
+    function fetchFilteredData() {
+      const status = statusSelect.value;
+      const mulai = tanggalMulai.value;
+      const selesai = tanggalSelesai.value;
+      const nama = namaInput.value;
+
+      const params = new URLSearchParams({ status, mulai, selesai, nama });
+
+      fetch(`../../../components/admin/laporan-cuti/table/adminLaporanCutiTable.php?${params.toString()}`)
+        .then(res => res.text())
+        .then(html => {
+          tableContainer.innerHTML = html;
+        })
+        .catch(err => console.error("Fetch error:", err));
+    }
+
+    // Jalankan fetch setiap kali filter berubah
+    [statusSelect, tanggalMulai, tanggalSelesai].forEach(el => {
+      el.addEventListener("change", fetchFilteredData);
+    });
+    namaInput.addEventListener("keyup", fetchFilteredData);
+
+    // Tombol reset filter
+    resetButton.addEventListener("click", () => {
+      statusSelect.value = "semua";
+      tanggalMulai.value = "";
+      tanggalSelesai.value = "";
+      namaInput.value = "";
+      fetchFilteredData();
+    });
   </script>
 </body>
 </html>

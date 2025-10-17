@@ -1,20 +1,36 @@
 <?php
 include __DIR__ . "/../../../../configs/database.php";
 
-$statusFilter = isset($_GET['status']) ? $_GET['status'] : 'semua';
+$statusFilter   = $_GET['status'] ?? 'semua';
+$tanggalMulai   = $_GET['mulai'] ?? '';
+$tanggalSelesai = $_GET['selesai'] ?? '';
+$namaFilter     = $_GET['nama'] ?? '';
 
-if ($statusFilter === 'semua') {
-  $sql = "SELECT cuti.*, users.nama_lengkap 
-          FROM cuti 
-          JOIN users ON cuti.user_id = users.id 
-          ORDER BY cuti.created_at DESC";
-} else {
-  $sql = "SELECT cuti.*, users.nama_lengkap 
-          FROM cuti 
-          JOIN users ON cuti.user_id = users.id 
-          WHERE cuti.status = '$statusFilter'
-          ORDER BY cuti.created_at DESC";
+$sql = "SELECT cuti.*, users.nama_lengkap 
+        FROM cuti 
+        JOIN users ON cuti.user_id = users.id 
+        WHERE 1=1";
+
+// Filter status
+if ($statusFilter !== 'semua') {
+  $sql .= " AND cuti.status = '$statusFilter'";
 }
+
+// Filter tanggal
+if (!empty($tanggalMulai) && !empty($tanggalSelesai)) {
+  $sql .= " AND (cuti.tanggal_mulai BETWEEN '$tanggalMulai' AND '$tanggalSelesai')";
+} elseif (!empty($tanggalMulai)) {
+  $sql .= " AND cuti.tanggal_mulai >= '$tanggalMulai'";
+} elseif (!empty($tanggalSelesai)) {
+  $sql .= " AND cuti.tanggal_selesai <= '$tanggalSelesai'";
+}
+
+// Filter nama
+if (!empty($namaFilter)) {
+  $sql .= " AND users.nama_lengkap LIKE '%$namaFilter%'";
+}
+
+$sql .= " ORDER BY cuti.created_at DESC";
 
 $result = $db->query($sql);
 ?>
