@@ -41,7 +41,16 @@ include "../../../controllers/admin/laporan-cuti/adminLaporanCutiController.php"
             <input type="text" id="namaFilter" placeholder="Cari nama...">
 
             <button id="resetFilter">Reset</button>
+            <div style="margin-bottom: 15px;">
+    <a href="../../../controllers/admin/laporan-cuti/exportPdf.php" 
+       target="_blank" 
+       class="btn-export"
+       style="background-color:#3b82f6;color:#fff;padding:8px 12px;border-radius:5px;text-decoration:none;">
+      📄 Export PDF
+    </a>
+  </div>
           </div>
+
 
           <!-- 📋 TABEL -->
           <div class="table-wrapper" id="tableContainer">
